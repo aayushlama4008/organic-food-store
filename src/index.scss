@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+:root{
+    --font-title: 'Merriweather', serif;
+    --font-base: 'Open Sans', sans-serif;
+
+    --primary-color: #8bc34a;
+    --secondary-color: #ac611b;
+    --background-color: #f8f6f3;
+    --white-color:#ffffff;
+    --black-color: #111111;
+    --text-color:#4f4f4f;
+    --gray-color:#dddddd;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+::selection {
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+::-moz-selection { 
+    // Code for Firefox 
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+

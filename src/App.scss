@@ -1,0 +1,30 @@
+.app{
+    font-family: var(--font-base);
+    background-color: var(--white-color);
+}
+.grid-center{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.p-text{
+    color: var(--text-color);
+}
+.title-text{
+    color: var(--black-color);
+    font-family: var(--font-title);
+    font-size: 50px;
+}
+.semi-title-text{
+    color: var(--black-color);
+    font-family: var(--font-title);
+    font-size: 35px;
+}
+.third-title-text{
+    color: var(--black-color);
+    font-family: var(--font-base);
+    font-weight: 600;
+}
+.a{
+    border: solid 1px black;
+}

@@ -1,0 +1,66 @@
+.app__contact{
+    min-height: 100vh;
+    width: 100%;
+
+    background: url(../../assets/background-leaf.png);
+    background-position-x: right ;
+    background-position-y: bottom;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    
+}
+.app__contact-header{
+    height: 350px;
+    background-color: var(--background-color);
+}
+.app__contact-leaf{
+    position: relative;
+    bottom: 30px;
+}
+.app__contact-details{
+    margin: 0 3rem ;
+    background-color: var(--white-color);
+    position: relative;
+    bottom: 80px;
+    padding: 0 2rem 3rem 2rem;
+    border-radius: 5px;
+    box-shadow:0 0 20px rgba(159, 159, 159, 0.2);
+   
+} 
+.app__contact-details-main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 2rem;
+    
+}
+.icon-contact{
+    color: var(--primary-color);
+    min-height: 50px;
+}    
+.links{
+
+    border: 0.1px solid var(--gray-color);
+    border-radius: 5px;
+    padding: 2rem 0;
+    a{
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight:50;
+        
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+}
+.app__contact-faqs{
+    gap: 2rem;
+    padding: 0 2rem;    
+
+}
+.app__contact-questions{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.app__contact-question{
+    padding: 2rem;
+}
