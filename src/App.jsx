@@ -1,9 +1,17 @@
 import "./App.scss";
-import { Navbar, Footer } from "./components";
+import { Footer, Navbar} from "./components";
 
-import { Home, About, Contact } from "./container";
+import {
+  Home,
+  Contact,
+  About,
+  Shop,
+  Cart,
+  LogInSignUp,
+  Product,
+} from "./container";
 
-import { Routes,Route,NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,9 +19,15 @@ function App() {
       <Navbar></Navbar>
       <div className="app__container">
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/About" element={<About></About>}></Route>
-          <Route path="/Contact" element={<Contact></Contact>}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Shop" element={<Shop />}></Route>
+          <Route path="/Product" element={<Product></Product>}>
+            <Route path=":productid" element={<Product />} />
+          </Route>
+          <Route path="/Cart" element={<Cart />}></Route>
+          <Route path="/About" element={<About />}></Route>
+          <Route path="/Contact" element={<Contact />}></Route>
+          <Route path="/LogInSignUp" element={<LogInSignUp />}></Route>
         </Routes>
       </div>
       <Footer></Footer>

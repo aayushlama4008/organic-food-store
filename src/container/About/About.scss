@@ -1,0 +1,117 @@
+
+.app__about{
+    min-height: 100vh;
+    width: 100%;
+
+    background: url(../../assets/background-leaf.png);
+    background-position-x: right ;
+    background-position-y: bottom;
+    background-size: 200px;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width:600px) {
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+.app__about-header{
+    height: 300px;
+    background-color: var(--background-color);
+}
+.app__about-leaf{
+    position: relative;
+    bottom: 30px;
+}
+.app__about-section{
+    margin: 0 3rem ;
+    background-color: var(--white-color);
+    position: relative;
+    bottom: 80px;
+    padding: 0 2rem 3rem 2rem;
+    border-radius: 5px;
+    box-shadow:0 0 20px rgba(159, 159, 159, 0.2);
+}
+.app__about-main{
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2rem;
+    padding: 1rem  ;
+    margin: 0 4rem;
+    
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    @media screen and (max-width:600px) {
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+.app__about-detail{
+    
+    h4{
+        padding-bottom: 1rem;
+    }
+}
+.app__about-customers{
+    background-color: #001524;
+    display: grid;
+    min-height: 150px;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    color: var(--white-color);
+    padding: 2rem  4rem;
+}
+.count-up-number{
+    color: white;
+    font-size: 35px;
+}
+.app__about-review{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    margin:4rem 6rem;
+    
+
+    @media screen and (max-width:600px) {
+        padding: 4rem 0;
+        margin: 0;
+        
+    }
+}
+.app__about-comment{
+    background-color: var(--background-color);
+    padding:2rem  6rem;
+    gap: 1rem;
+    
+    
+}
+.app__about-star{
+    position: relative;
+    bottom: 30px;
+}
+.about-img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 50px;
+}
+.app__about-star{
+        svg{
+            color: #ffbb1e;
+
+        }
+}
+.app__about-certified{
+    padding: 6rem 3rem;
+    display: grid;
+    justify-content: center;
+
+}
+.app__about-products{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+   
+}

@@ -1,0 +1,18 @@
+.app__home-hero{
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+    padding: 3rem  3rem;
+
+    background-color: var(--background-color);
+    background: url(../../assets/background-leaf.png);
+    background-position-x: right ;
+    background-position-y: bottom;
+    background-size: 200px;
+    background-repeat: no-repeat;
+
+}
+
+.app_home-title{
+    display: grid;
+    gap: 1rem;
+}

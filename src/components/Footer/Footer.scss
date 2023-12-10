@@ -4,6 +4,16 @@
     width: 100%;
     display: grid;
     grid-template-rows: 1fr  100px;
+
+    @media  screen and (max-width:900px) {
+        a,h2{
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
     
 }
 .app__footer-main{
@@ -16,6 +26,7 @@
 }
 .footer-text {
     color: #ffffffa8;
+    
 
     a{
         color: #ffffffa8;

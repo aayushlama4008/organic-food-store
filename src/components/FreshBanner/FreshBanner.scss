@@ -1,0 +1,47 @@
+.app__fresh{
+    background-color: var(--background-color);
+    padding-bottom: 3rem;
+}
+.app__fresh-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    padding: 4rem 3rem;
+    gap: 2rem;
+}
+.app__fresh-fruits{
+    background: url(../../assets/lemon.png);
+    
+}
+.app__fresh-vegetables{
+    background: url(../../assets/lettuce.png);
+    
+}
+.app__fresh-organic{
+    background: url(../../assets/coffee.png);
+    
+}
+.app__fresh-fruits-box{
+    background-position-x: right ;
+    background-position-y: bottom;
+    background-size: 220px;
+    background-repeat: no-repeat;
+
+    background-color: var(--white-color);
+    padding: 3rem 2rem;
+    
+    display: grid;
+    grid-template-rows: repeat(3,70px);
+    border-radius: 10px;
+    box-shadow:0 0 20px rgba(159, 159, 159, 0.2);
+    min-height: 330px;
+
+
+    @media screen and (max-width:400px) {
+        width:290px;
+        height: auto;
+    }
+}
+.app__fresh-leaf{
+    position: relative;
+    bottom: 30px;
+}

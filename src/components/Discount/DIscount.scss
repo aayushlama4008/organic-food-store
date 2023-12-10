@@ -1,0 +1,29 @@
+.app__discount{
+    background-color: var(--black-color);
+    display: grid;
+    grid-template-columns: 1fr  200px;
+    padding: 3rem 2rem;
+    min-height: 150px;
+    align-items: center;
+
+    @media screen and (max-width:900px) {
+        h1{
+            font-size: 22px;
+        }
+    }
+    @media screen and (max-width:600px) {
+       display: grid;
+       gap: 1rem;
+       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+       justify-items: center;
+       align-items: center;
+
+       h1{
+        font-size: 19px;
+       }
+    }
+}
+.dicount-button{
+    display: grid;
+    justify-content: right;
+}

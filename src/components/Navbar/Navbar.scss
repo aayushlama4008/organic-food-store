@@ -1,26 +1,36 @@
 .app__navbar{
-    // background-color: var(--white-color);
     height: 100px;
     padding: 1rem;
 
     display: grid;
-    grid-template-columns: 230px minmax(450px,1fr) 200px;
-    width: 100vw;
-    position: fixed;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    grid-template-columns: 230px minmax(450px,1fr) 200px ;
+
+    @media screen and (max-width:900px) {
+        display: grid;
+        grid-template-columns: 230px  1fr;
+    }
+    
 }
 .app__navbar-items{
     display: grid;
-    grid-template-columns: repeat(3,120px);
+    grid-template-columns: repeat(3,100px);
     justify-content: start;
     align-items: center;
+
+    @media screen and (max-width:900px) {
+        display: none;
+    }
 }
 .app__navbar-details{
     display: grid;
     grid-template-columns: repeat(4,80px);
     justify-content: end;
     align-items: center;
+
+
+    @media screen and (max-width:900px) {
+        display: none;
+    }
 }
 .app__navbar-items{
     a{
@@ -52,5 +62,61 @@
             color: var(--primary-color);
             
         }
+    
+}
+.nav-cart-count{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: var(--black-color);
+    background-color: var(--primary-color);
+    position: relative;
+    bottom: 32px;
+    left: 55px;
+}
+.cart{
+    padding-top: 15px;
+    color: var(--primary-color);
+
+    svg{
+        position: relative;
+        top: 3px;
+        color: var(--primary-color);
+    }
+}
+.hamburger{
+   display: grid;
+   justify-self: right;
+}
+.app__navbar-hamburger{
+    color: var(--primary-color);
+
+    @media screen and (min-width:900px) {
+        display: none;
+    }
+
+}
+.app__navbar-hamburger-open{
+    background-color: var(--white-color);
+
+    display: grid;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 1rem  2rem;
+    width: 80%;
+    height: fit-content;
+
+    a{
+        text-decoration: none;
+        color: var(--black-color);
+        font-weight: 400px;
+
+    }
     
 }

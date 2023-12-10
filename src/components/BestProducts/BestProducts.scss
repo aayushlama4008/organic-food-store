@@ -1,0 +1,21 @@
+.app__home-best {
+    display: grid;
+    margin: 2rem 0;
+    padding: 5rem 2rem;
+    gap: 2rem;
+    grid-template-rows: 150px 1fr;
+}
+.best-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2rem;
+
+}
+.app__home-product {
+    gap: 5px;
+    cursor: pointer;
+}
+.new-product{
+    display: grid;
+    gap: 3px;
+}

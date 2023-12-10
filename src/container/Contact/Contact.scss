@@ -10,7 +10,7 @@
     
 }
 .app__contact-header{
-    height: 350px;
+    height: 300px;
     background-color: var(--background-color);
 }
 .app__contact-leaf{
@@ -31,6 +31,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
     gap: 2rem;
+
+    @media screen and (max-width:500px) {
+            font-size: 10px;
+            width: 100px;
+    }
     
 }
 .icon-contact{
@@ -51,6 +56,9 @@
             color: var(--primary-color);
         }
     }
+    @media screen and (max-width:400px) {
+        width: 220px;
+}
 }
 .app__contact-faqs{
     gap: 2rem;

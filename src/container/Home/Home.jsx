@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.scss";
+
+import {
+  Hero,
+  FreeShipping,
+  BestProducts,
+  FreshBanner,
+  Discount,
+  TrendingProducts,
+  Review
+} from "../../components/index";
+
 
 const Home = () => {
   return (
     <div className="app__home">
-      <h1>Aayush lama</h1>
-      
+      <Hero />
+      <FreeShipping />
+      <BestProducts />
+      <FreshBanner />
+      <Discount />
+      <TrendingProducts/>
+      <Review/>
     </div>
   );
 };

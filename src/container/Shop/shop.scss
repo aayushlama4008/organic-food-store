@@ -1,0 +1,21 @@
+.app__shop{
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding: 3rem 5rem;
+
+    h1{
+        padding: 2rem 2rem;
+    }
+}
+.app__shop-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+}
+.img{
+    height: auto;
+    width: 100%;
+}
+.app__shop-product {
+    gap: 3px;
+}

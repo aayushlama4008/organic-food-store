@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "count-up": "^1.0.4",
     "framer-motion": "^10.16.5",
     "react": "^18.2.0",
+    "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.20.0",
+    "react-slideshow-image": "^4.3.0",
     "sass": "^1.69.5"
   },
   "devDependencies": {

@@ -1,2 +1,10 @@
 export {default as Navbar} from './Navbar/Navbar'
 export {default as Footer} from './Footer/Footer'
+export {default as Hero} from './Hero/Hero'
+export {default as FreeShipping} from './FreeShipping/FreeShipping'
+export {default as BestProducts} from './BestProducts/BestProducts'
+export {default as FreshBanner} from './FreshBanner/FreshBanner'
+export {default as Discount} from './Discount/Discount'
+export {default as TrendingProducts} from './TrendingProducts/TrendingProducts'
+export {default as Review } from './Review/Review'
+

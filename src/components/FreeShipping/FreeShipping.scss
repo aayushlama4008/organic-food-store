@@ -1,0 +1,16 @@
+.app__home-options{
+    min-height: 180px;
+    background-color: var(--black-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 1rem 0;
+}
+.app__home-option{
+    padding: 2rem;
+    color: var(--white-color);
+    a{
+        color: var(--primary-color);
+        text-decoration: none;
+        font-family: var(--font-title);
+    }
+}

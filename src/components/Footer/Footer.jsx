@@ -64,21 +64,11 @@ const Footer = () => {
       <div className="app__footer-bottom">
         <p className="footer-text">Copyright © 2023 | Organic Store</p>
         <div className="app__footer-social">
-          <Link to={"/"}>
-            <icons.facebook size={20}></icons.facebook>
-          </Link>
-          <Link to={"/"}>
-            <icons.twitter size={20}></icons.twitter>
-          </Link>
-          <Link to={"/"}>
-            <icons.insta size={20}></icons.insta>
-          </Link>
-          <Link
-            to={"https://github.com/aayushlama4008/organic-food-store.git"}
-            target="_blank"
-          >
-            <icons.github size={20}></icons.github>
-          </Link>
+          <Link to={'/'}><icons.facebook size={20}></icons.facebook></Link>
+          <Link to={'/'}><icons.twitter size={20}></icons.twitter></Link>
+          <Link to={'/'}><icons.insta size={20}></icons.insta></Link>
+          <Link to={'https://github.com/aayushlama4008/organic-food-store.git'}
+          target="_blank"><icons.github size={20} ></icons.github></Link>
         </div>
       </div>
     </div>
