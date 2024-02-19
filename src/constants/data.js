@@ -42,7 +42,7 @@ const allProducts =[
     {
         id:2,
         title:'Fresh Orange Juice',
-        category:'Grocery',
+        category:'Juice',
         price:'£20.00',
         imgUrl:images.product2
     },
@@ -88,9 +88,68 @@ const allProducts =[
         price:'£30.00',
         imgUrl:images.product8
     },
+    {
+        id:9,
+        title:'Fresh Juice',
+        category:'Juice',
+        price:'£30.00',
+        imgUrl:images.product9
+    },
+    {
+        id:10,
+        title:'Fresh Juice',
+        category:'Juice',
+        price:'£30.00',
+        imgUrl:images.product10
+    },
+    {
+        id:11,
+        title:'Fresh Juice',
+        category:'Juice',
+        price:'£30.00',
+        imgUrl:images.product11
+    },
+    {
+        id:12,
+        title:'Fresh Juice',
+        category:'Juice',
+        price:'£30.00',
+        imgUrl:images.product12
+    }
    
+]
+const trendingProducts = [
+    {
+        id:1,
+        title:'Hand Sanitizer',
+        category:'Grocery',
+        price:'£20.00',
+        imgUrl:images.product5
+    },
+    {
+        id:2,
+        title:'Assorted Coffee',
+        category:'Grocery',
+        price:'£20.00',
+        imgUrl:images.product6
+    },
+    {
+        id:3,
+        title:'Farm Fresh Eggs',
+        category:'Grocery',
+        price:'£25.00',
+        imgUrl:images.product7
+    },
+    {
+        id:4,
+        title:'Fresh Peaches',
+        category:'Grocery',
+        price:'£30.00',
+        imgUrl:images.product8
+    },
 ]
 export default {
     bestProducts,
-    allProducts
+    allProducts,
+    trendingProducts,
 }

@@ -9,7 +9,7 @@ import {
   Cart,
   LogInSignUp,
   Product,
-} from "./container";
+} from "./pages";
 
 import { Routes, Route } from "react-router-dom";
 

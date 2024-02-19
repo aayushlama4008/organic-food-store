@@ -3,11 +3,10 @@ import "../BestProducts/BestProducts.scss";
 
 import images from "../../constants/images";
 import { useState } from "react";
-import icons from "../../constants/icons";
 
+import Item from '../../components/Item/Item'
 import bestProducts from "../../constants/data";
 const TrendingProducts = () => {
-  const [products, setProducts] = useState(bestProducts);
   return (
     <div className="app__home-best ">
       <div className="grid-center">
@@ -15,20 +14,15 @@ const TrendingProducts = () => {
         <img src={images.smallLeaf} alt="small-leaf" />
       </div>
       <div className="best-products ">
-        {products.bestProducts.map((product) => {
+        {bestProducts.trendingProducts.map((product, i) => {
           return (
-            <div key={product.id} className="grid-center new-product">
-              <img src={product.imgUrl} alt={product.title} className="img" />
-              <h4 className="third-title-text ">{product.title}</h4>
-              <div className="product-rating">
-                <icons.lightStar />
-                <icons.lightStar />
-                <icons.lightStar />
-                <icons.lightStar />
-                <icons.lightStar />
-              </div>
-              <h5 className="price">{product.price}</h5>
-            </div>
+            <Item
+              key={i}
+              id={product.id}
+              title={product.title}
+              imgUrl={product.imgUrl}
+              price={product.price}
+            ></Item>
           );
         })}
       </div>

@@ -8,14 +8,7 @@
 .best-products{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 2rem;
+    gap: 30px;
+    
 
-}
-.app__home-product {
-    gap: 5px;
-    cursor: pointer;
-}
-.new-product{
-    display: grid;
-    gap: 3px;
 }

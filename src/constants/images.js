@@ -28,6 +28,11 @@ import logo2 from '../assets/logo-2.svg'
 import logo3 from '../assets/logo-3.svg'
 import logo4 from '../assets/logo-4.svg'
 import logo5 from '../assets/logo-5.svg'
+import product9 from '../assets/product-9.jpg'
+import product10 from '../assets/product-10.jpg'
+import product11 from '../assets/product-11.jpg'
+import product12 from '../assets/product-12.jpg'
+
 
 
 
@@ -69,6 +74,11 @@ export default {
     logo3,
     logo4,
     logo5,
+    product9,
+    product10,
+    product11,
+    product12,
+
 
 
 }

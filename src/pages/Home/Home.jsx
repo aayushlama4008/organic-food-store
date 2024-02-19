@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="app__home">
       <Hero />
-      <FreeShipping />
+      <FreeShipping /> 
       <BestProducts />
       <FreshBanner />
       <Discount />

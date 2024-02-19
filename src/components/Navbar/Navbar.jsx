@@ -22,8 +22,8 @@ const Navbar = () => {
       </div>
       <div className="app__navbar-items ">
         <NavLink to={"/Shop"}>Shop</NavLink>
-        <NavLink to={"/"}>Groceries</NavLink>
-        <NavLink to={"/"}>Food</NavLink>
+        <NavLink to={"/Food"}>Food</NavLink>
+        <NavLink to={"/Juice"}>Juice</NavLink>
       </div>
       <div className="app__navbar-details">
         <NavLink to={"/About"}>About</NavLink>
