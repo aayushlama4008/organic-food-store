@@ -2,7 +2,7 @@ import React from "react";
 import "../BestProducts/BestProducts.scss";
 
 import images from "../../constants/images";
-import { useState } from "react";
+
 
 import Item from '../../components/Item/Item'
 import bestProducts from "../../constants/data";
