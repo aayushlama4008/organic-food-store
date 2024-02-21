@@ -21,7 +21,7 @@ const Item = (props) => {
         <icons.lightStar />
         <icons.lightStar />
       </div>
-      <h5 className="price">{props.price}</h5>
+      <h5 className="price">£{props.price}</h5>
     </div>
   );
 };

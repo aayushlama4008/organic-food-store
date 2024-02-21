@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./productDisplay.scss";
+import { ShopContext } from "../../context/ShopContext";
 
 function ProductDisplay(props) {
+  const { addToCart ,removeFromCart} = useContext(ShopContext);
   const { product } = props;
   return (
     <div className="product-display">
@@ -12,7 +14,7 @@ function ProductDisplay(props) {
       <div className="product--desc">
         <h1 className="third-title-text">{product.title}</h1>
         <span>
-          <h2 className="third-title-text">{product.price}</h2>
+          <h2 className="third-title-text">£{product.price}</h2>
           <p>+ Free Shipping</p>
         </span>
         <p>
@@ -22,7 +24,7 @@ function ProductDisplay(props) {
         </p>
         <div className="product--quantity">
           <input type="number" name="number" id="number" />
-          <button>Add To Cart</button>
+          <button onClick={() => addToCart(product.id)}>Add To Cart</button>
         </div>
         <hr color="#d2d0d0" />
         <div className="product--category">

@@ -10,7 +10,6 @@ function RelatedProducts(props) {
   const related = allProducts.allProducts.filter(
     (p) => p.category === product.category && p.id !== product.id
   );
-  console.log(related);
   return (
     <div className="related--products">
       <h1 className="third-title-text">Related Products</h1>

@@ -16,6 +16,7 @@ import { IoMenu as hamBurger } from "react-icons/io5";
 import { FaArrowRight as arrowRight } from "react-icons/fa";
 import { IoMdArrowDropdown as dropDown } from "react-icons/io";
 import { IoIosArrowForward as breadCrumbs} from "react-icons/io";
+import { CiCircleRemove as remove} from "react-icons/ci";
 
 export default {
   phone,
@@ -35,5 +36,6 @@ export default {
   hamBurger,
   arrowRight,
   dropDown,
-  breadCrumbs
+  breadCrumbs,
+  remove
 };

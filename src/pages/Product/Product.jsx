@@ -16,7 +16,6 @@ const Product = () => {
   const product = allProducts.allProducts.find(
     (p) => p.id === Number(productId)
   );
-  console.log(product);
   return (
     <div className="product-item">
       <BreadCrums product={product} />
