@@ -1,9 +1,25 @@
-import React from 'react'
-import './Product.scss'
-const Product = () => {
-  return (
-    <div>Product</div>
-  )
-}
+import React, { useContext } from "react";
+import "./Product.scss";
+import { ShopContext } from "../../context/ShopContext";
+import { useParams } from "react-router-dom";
+import BreadCrums from "../../components/BreadCrums/BreadCrums";
+import ProductDisplay from "../../components/ProductDisplay/ProductDisplay";
 
-export default Product
+import "./product.scss";
+const Product = () => {
+  const { allProducts } = useContext(ShopContext);
+  const { productId } = useParams();
+  // console.log(allProducts.allProducts)
+  const product = allProducts.allProducts.find(
+    (p) => p.id === Number(productId)
+  );
+  console.log(product);
+  return (
+    <div className="product-item">
+      <BreadCrums product={product} />
+      <ProductDisplay product={product} />
+    </div>
+  );
+};
+
+export default Product;

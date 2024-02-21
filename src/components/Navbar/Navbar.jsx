@@ -21,6 +21,7 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div className="app__navbar-items ">
+        <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/Shop"}>Shop</NavLink>
         <NavLink to={"/Food"}>Food</NavLink>
         <NavLink to={"/Juice"}>Juice</NavLink>
@@ -50,14 +51,17 @@ const Navbar = () => {
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            <NavLink to={"/"} onClick={() => setToggle(false)}>
+              Home
+            </NavLink>
             <NavLink to={"/Shop"} onClick={() => setToggle(false)}>
               Shop
             </NavLink>
-            <NavLink to={"/"} onClick={() => setToggle(false)}>
-              Groceries
-            </NavLink>
-            <NavLink to={"/"} onClick={() => setToggle(false)}>
+            <NavLink to={"/Food"} onClick={() => setToggle(false)}>
               Food
+            </NavLink>
+            <NavLink to={"/Juice"} onClick={() => setToggle(false)}>
+              Juice
             </NavLink>
             <NavLink to={"/About"} onClick={() => setToggle(false)}>
               About

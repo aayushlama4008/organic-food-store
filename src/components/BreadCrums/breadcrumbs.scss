@@ -1,0 +1,20 @@
+.bread-crumbs {
+  padding: 2rem 4rem;
+  color: var(--black-color);
+  background-color: var(--background-color);
+
+  p {
+    a {
+      text-decoration: none;
+      color: var(--black-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+  svg {
+    position: relative;
+    top: 3px;
+  }
+}

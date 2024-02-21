@@ -13,7 +13,7 @@
 }
 .app__navbar-items{
     display: grid;
-    grid-template-columns: repeat(3,100px);
+    grid-template-columns: repeat(4,90px);
     justify-content: start;
     align-items: center;
 
@@ -69,7 +69,7 @@
     width: 17px;
     border-radius: 50%;
     font-size: 12px;
-    color: var(--black-color);
+    color: var(--white-color);
     background-color: var(--primary-color);
     position: relative;
     bottom: 32px;
@@ -110,7 +110,8 @@
 
     padding: 1rem  2rem;
     width: 80%;
-    height: fit-content;
+    height: 100vh;
+    
 
     a{
         text-decoration: none;

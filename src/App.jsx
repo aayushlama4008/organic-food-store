@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Footer, Navbar} from "./components";
+import { Footer, Navbar } from "./components";
 
 import {
   Home,
@@ -12,6 +12,7 @@ import {
 } from "./pages";
 
 import { Routes, Route } from "react-router-dom";
+import ShopCategory from "./pages/ShopCategory/ShopCategory";
 
 function App() {
   return (
@@ -21,8 +22,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Shop" element={<Shop />}></Route>
-          <Route path="/Product" element={<Product></Product>}>
-            <Route path=":productid" element={<Product />} />
+          <Route
+            path="/Food"
+            element={<ShopCategory category="food" heading="Food" />}
+          ></Route>
+          <Route
+            path="/Juice"
+            element={<ShopCategory category="juice" heading="Juice" />}
+          ></Route>
+          <Route path="/Product" element={<Product />}>
+            <Route path=":productId" element={<Product />} />
           </Route>
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/About" element={<About />}></Route>
