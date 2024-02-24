@@ -3,21 +3,26 @@
   background-color: var(--background-color);
   display: grid;
   justify-content: center;
-  max-height: 600px;
-  
+  align-items: center;
 
   background-image: url(../../assets/background-leaf.png);
-  background-position-x: right ;
+  background-position-x: right;
   background-position-y: bottom;
   background-size: 250px;
   background-repeat: no-repeat;
-  
-  
+
+  @media screen and (max-width: 500px) {
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
 }
 .signup--fields {
   display: grid;
   gap: 1rem;
-  
+
   input {
     height: 35px;
     outline: none;
@@ -26,6 +31,7 @@
     border-radius: 5px;
     padding: 5px 10px;
   }
+  margin-bottom: 1rem;
 }
 .signup--container {
   background-color: var(--white-color);
@@ -55,14 +61,14 @@
       transition: 0.3s;
     }
   }
-  p{
+  p {
     color: var(--text-color);
     font-size: 14px;
     margin: 0.5rem 0;
-    span{
-        color: var(--primary-color);
-        cursor: pointer;
-        text-decoration: underline;
+    span {
+      color: var(--primary-color);
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
@@ -70,8 +76,8 @@
   display: grid;
   justify-content: center;
 }
-.signup--agree{
-    display: grid;
-    grid-template-columns: 10px 1fr;
-    gap: 5px;
+.signup--agree {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 5px;
 }

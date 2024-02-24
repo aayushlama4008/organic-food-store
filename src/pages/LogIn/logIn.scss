@@ -3,13 +3,22 @@
   background-color: var(--background-color);
   display: grid;
   justify-content: center;
-  max-height: 600px;
+  align-items: center;
+  
 
   background-image: url(../../assets/background-leaf.png);
   background-position-x: right;
   background-position-y: bottom;
   background-size: 250px;
   background-repeat: no-repeat;
+
+  @media screen and (max-width:500px) {
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+  }
 }
 .login--fields {
   display: grid;
