@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className="nav-cart-count grid-center">{getTotalItem()}</div>
           </span>
         </NavLink>
-        <NavLink to={"/LogInSignUp"}>
+        <NavLink to={"/Sign-up"}>
           <FaUser />
         </NavLink>
       </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
               Contact
             </NavLink>
 
-            <NavLink to={"/LogInSignUp"} onClick={() => setToggle(false)}>
+            <NavLink to={"/Sign-up"} onClick={() => setToggle(false)}>
               <FaUser />
             </NavLink>
           </motion.div>

@@ -7,12 +7,13 @@ import {
   About,
   Shop,
   Cart,
-  LogInSignUp,
+  SignUp,
   Product,
 } from "./pages";
 
 import { Routes, Route } from "react-router-dom";
 import ShopCategory from "./pages/ShopCategory/ShopCategory";
+import LogIn from "./pages/LogIn/LogIn";
 
 function App() {
   return (
@@ -36,7 +37,8 @@ function App() {
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/About" element={<About />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
-          <Route path="/LogInSignUp" element={<LogInSignUp />}></Route>
+          <Route path="/Sign-up" element={<SignUp />}></Route>
+          <Route path="/Log-in" element={<LogIn/>}></Route>
         </Routes>
       </div>
       <Footer></Footer>
