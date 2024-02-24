@@ -23,7 +23,6 @@ function ProductDisplay(props) {
           numquam eius modi tempora incidunt lores ta porro ame.
         </p>
         <div className="product--quantity">
-          <input type="number" name="number" id="number" />
           <button onClick={() => addToCart(product.id)}>Add To Cart</button>
         </div>
         <hr color="#d2d0d0" />

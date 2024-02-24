@@ -7,12 +7,15 @@ import { RiShoppingBasketFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
 
 import icons from "../../constants/icons";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import { motion } from "framer-motion";
+import { ShopContext } from "../../context/ShopContext";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
+  const { getTotalAmount, getTotalItem } = useContext(ShopContext);
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo grid-center">
@@ -29,10 +32,12 @@ const Navbar = () => {
       <div className="app__navbar-details">
         <NavLink to={"/About"}>About</NavLink>
         <NavLink to={"/Contact"}>Contact</NavLink>
-        <NavLink to={"/Cart"} className={"cart"}>
-          $0.00
-          <RiShoppingBasketFill size={23} />
-          <div className="nav-cart-count grid-center">0</div>
+        <NavLink to={"/Cart"} className="cart">
+          <p>£{getTotalAmount()}</p>
+          <span className="basket">
+            <RiShoppingBasketFill size={23} />
+            <div className="nav-cart-count grid-center">{getTotalItem()}</div>
+          </span>
         </NavLink>
         <NavLink to={"/LogInSignUp"}>
           <FaUser />
@@ -40,6 +45,19 @@ const Navbar = () => {
       </div>
 
       <div className="app__navbar-hamburger grid-center">
+        <div className="small-basket">
+          <NavLink
+            to={"/Cart"}
+            className="small-cart"
+            onClick={() => setToggle(false)}
+          >
+            <p>£{getTotalAmount()}</p>
+            <span className="basket">
+              <RiShoppingBasketFill size={23} />
+              <div className="nav-cart-count grid-center">{getTotalItem()}</div>
+            </span>
+          </NavLink>
+        </div>
         <icons.hamBurger
           size={30}
           onClick={() => setToggle(true)}
@@ -69,18 +87,7 @@ const Navbar = () => {
             <NavLink to={"/Contact"} onClick={() => setToggle(false)}>
               Contact
             </NavLink>
-            <NavLink
-              to={"/Cart"}
-              className={"cart"}
-              onClick={() => setToggle(false)}
-            >
-              $0.00
-              <RiShoppingBasketFill
-                size={23}
-                onClick={() => setToggle(false)}
-              />
-              <div className="nav-cart-count grid-center">0</div>
-            </NavLink>
+
             <NavLink to={"/LogInSignUp"} onClick={() => setToggle(false)}>
               <FaUser />
             </NavLink>
