@@ -22,7 +22,7 @@ const ShopContextProvider = (props) => {
   };
 
   const getTotalAmount = () => {
-    let totalAmount = 0;
+    let totalAmount = 0.00;
 
     for (const item in cart) {
       if (cart[item] > 0) {
@@ -33,6 +33,8 @@ const ShopContextProvider = (props) => {
       }
     }
     return totalAmount;
+    // return totalAmount.toFixed(2);
+
   };
   const getTotalItem = () => {
     let totalItems = 0;
